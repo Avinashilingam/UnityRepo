@@ -21,8 +21,5 @@ public class SceneLoaderScript : MonoBehaviour
       Debug.Log("Button Clicked");
       SceneManager.LoadScene(newScene);
     }  
-
 }
-
-    
 
