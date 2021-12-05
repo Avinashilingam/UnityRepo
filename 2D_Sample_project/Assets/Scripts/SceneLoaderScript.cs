@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SceneLoaderScript : MonoBehaviour
 {
   public Button button;
+  public string newScene;
 
 
     private void Start() 
@@ -16,6 +19,10 @@ public class SceneLoaderScript : MonoBehaviour
     private void OnButtonClick()
     {
       Debug.Log("Button Clicked");
+      SceneManager.LoadScene(newScene);
     }  
+
 }
+
+    
 
